@@ -1,0 +1,38 @@
+@import './styles/tokens.css';
+@import './styles/utilities.css';
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  color: var(--color-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-weight: var(--fw-extrabold);
+}
+
+p {
+  margin: 0;
+}

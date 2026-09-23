@@ -1,0 +1,45 @@
+/* Design tokens extracted from the Figma mockups (file: Alexia's website mockups). */
+
+/* Breakpoints (postcss-custom-media) */
+@custom-media --mobile (max-width: 600px);
+@custom-media --tablet (max-width: 960px);
+@custom-media --desktop (max-width: 1200px);
+@custom-media --wide (min-width: 1440px); /* unused for now */
+
+:root {
+  /* Colors */
+  --color-sunset-purple: #514c9a;
+  --color-eel: #6c63ff;
+  --color-darker-eel: #4f46e2;
+  --color-dark: #2f2e41;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-bg: #f6f6f6;
+  --color-pink-tint: rgba(255, 104, 132, 0.05);
+  --color-error: #b3261e;
+  --color-deep-purple: #423d87;
+
+  /* Layout */
+  --container-max-width: 75rem; /* 1200px */
+  --container-padding-inline: 1.5rem;
+  --section-padding-block: 6rem;
+
+  /* Typography */
+  --font-family-base: 'Inter', sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-extrabold: 800;
+
+  /* Type scale (base 16px: 1rem = 16px) */
+  --fs-big-title: 5.625rem; /* 90px */
+  --fs-h2: 3.75rem; /* 60px */
+  --fs-h3: 2.25rem; /* 36px */
+  --fs-subheading: 1.75rem; /* 28px */
+  --fs-lg: 1.875rem; /* 30px */
+  --fs-lead: 1.5rem; /* 24px */
+  --fs-body: 1.25rem; /* 20px */
+  --fs-tag: 1rem; /* 16px */
+  --fs-eyebrow: 0.875rem; /* 14px */
+}

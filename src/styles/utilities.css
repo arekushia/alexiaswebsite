@@ -1,0 +1,13 @@
+.font-weight-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-decoration-underline {
+  text-decoration-line: underline;
+}
+
+.text-decoration-funky {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 11.5%;
+}
