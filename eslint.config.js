@@ -21,7 +21,7 @@ export default [
     },
   },
   {
-    files: ['server/**/*.js', 'vite.config.js'],
+    files: ['server/**/*.js', 'scripts/**/*.js', 'vite.config.js', 'postcss.config.js'],
     languageOptions: {
       globals: {
         ...globals.node,
