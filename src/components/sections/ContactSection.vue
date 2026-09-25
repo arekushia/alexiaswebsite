@@ -62,7 +62,7 @@ const titleId = useId()
 .ContactSection-mobileCta {
   display: none;
 
-  @media (--mobile) {
+  @media (--tablet) {
     display: block;
     padding-block: 3.875rem 0;
     text-align: center;
@@ -106,6 +106,9 @@ const titleId = useId()
   z-index: 2;
   width: clamp(9rem, 21vw, 19.188rem);
   height: auto;
+  @media (--tablet) {
+    width: 40%;
+  }
 }
 
 .ContactSection-waves {
@@ -144,7 +147,7 @@ const titleId = useId()
   gap: 0.875rem;
   font-size: var(--fs-subheading);
 
-  @media (--mobile) {
+  @media (--tablet) {
     display: none;
   }
 }

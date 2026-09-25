@@ -17,10 +17,13 @@ const distDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../d
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+const isImplicitTls = Number(SMTP_PORT) === 465
+
 const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
   port: Number(SMTP_PORT),
-  secure: Number(SMTP_PORT) === 465,
+  secure: isImplicitTls,
+  ignoreTLS: !isImplicitTls,
   auth: SMTP_USER ? { user: SMTP_USER, pass: SMTP_PASS } : undefined,
 })
 

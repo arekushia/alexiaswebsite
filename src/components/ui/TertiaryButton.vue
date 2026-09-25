@@ -3,7 +3,7 @@ defineProps({
   href: { type: String, required: true },
   label: { type: String, required: true },
   icon: { type: String, default: null },
-  external: { type: Boolean, default: true },
+  target: { type: String, default: '_blank' },
 })
 </script>
 
@@ -11,8 +11,8 @@ defineProps({
   <a
     :href="href"
     class="TertiaryButton"
-    :target="external ? '_blank' : undefined"
-    :rel="external ? 'noopener noreferrer' : undefined"
+    :target="target"
+    :rel="target === '_blank' ? 'noopener noreferrer' : undefined"
   >
     <img v-if="icon" :src="icon" class="TertiaryButton-icon" alt="" />
     <span>{{ label }}</span>

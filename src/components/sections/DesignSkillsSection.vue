@@ -6,7 +6,6 @@ import stars from '../../assets/illustrations/stars.svg'
 
 <template>
   <section id="design-skills" class="DesignSkillsSection">
-    <img :src="stars" class="DesignSkillsSection-stars" alt="" />
 
     <Container class="DesignSkillsSection-row">
       <div class="DesignSkillsSection-text">
@@ -54,7 +53,7 @@ import stars from '../../assets/illustrations/stars.svg'
           alt="Stylized mobile app illustration"
           class="DesignSkillsSection-image"
         />
-        <img :src="stars" class="DesignSkillsSection-starsMobile" alt="" />
+        <img :src="stars" class="DesignSkillsSection-stars" alt="" />
       </div>
     </Container>
   </section>
@@ -76,10 +75,10 @@ import stars from '../../assets/illustrations/stars.svg'
 .DesignSkillsSection-stars {
   position: absolute;
   right: -4%;
-  bottom: -6%;
-  width: 30%;
+  bottom: -6.25rem;
+  width: 120%;
 
-  @media (--mobile) {
+  @media (--tablet) {
     display: none;
   }
 }
@@ -107,8 +106,7 @@ import stars from '../../assets/illustrations/stars.svg'
   min-width: 0;
 
   @media (--mobile) {
-    gap: 1.5rem;
-    margin-bottom: 10.625rem;
+    gap: 1.5rem;    
   }
 }
 

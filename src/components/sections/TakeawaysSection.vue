@@ -7,6 +7,10 @@ import iconLinkedin from '../../assets/icons/icon-linkedin.svg'
 
 const githubUrl = 'https://github.com/arekushia'
 const linkedinUrl = 'https://www.linkedin.com/in/alexia-legros/'
+const portfolioUrl =
+  'https://www.figma.com/design/wdZsjbUFk9uc6UAg6zDHUa/Alexia-s-Portfolio?node-id=6-2'
+const websiteFigmaMockups =
+  'https://www.figma.com/design/wnVG0tXowu8brB3Vz79tB1/Alexia-s-website-mockups?node-id=3314-538&t=TUvGZGB5FEWiaSyo-1'
 </script>
 
 <template>
@@ -19,7 +23,7 @@ const linkedinUrl = 'https://www.linkedin.com/in/alexia-legros/'
           <p class="TakeawaysSection-text">
             You can download my (not so) <span class="font-weight-bold">traditional CV</span>
           </p>
-          <TertiaryButton href="/files/cv.pdf" label="here" :external="false" />
+          <TertiaryButton href="/files/cv.pdf" label="here" />
         </li>
 
         <li class="TakeawaysSection-item">
@@ -27,17 +31,9 @@ const linkedinUrl = 'https://www.linkedin.com/in/alexia-legros/'
             You can get access to my <span class="font-weight-bold">Figma files</span> to see how I
             work
           </p>
-          <TertiaryButton
-            href="https://www.figma.com/design/wdZsjbUFk9uc6UAg6zDHUa/Alexia-s-Portfolio?node-id=6-2"
-            label="To the Portfolio"
-            :icon="iconFigma"
-          />
-         <p class="TakeawaysSection-text">or</p>
-          <TertiaryButton
-            href="https://www.figma.com/design/wdZsjbUFk9uc6UAg6zDHUa/Alexia-s-Portfolio?node-id=6-2"
-            label="See this file"
-            :icon="iconFigma"
-          />
+          <TertiaryButton :href="portfolioUrl" label="To the Portfolio" :icon="iconFigma" />
+          <p class="TakeawaysSection-text">or</p>
+          <TertiaryButton :href="websiteFigmaMockups" label="See this file" :icon="iconFigma" />
         </li>
 
         <li class="TakeawaysSection-item">

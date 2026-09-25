@@ -191,8 +191,7 @@ const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !']
   border: 1px solid rgba(255, 255, 255, 0.28);
   @media (--mobile) {
     margin-bottom: 4.5rem;
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
+     padding: 1.5rem 3.125rem;
   }
 }
 

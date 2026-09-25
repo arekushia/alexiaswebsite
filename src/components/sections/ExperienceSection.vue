@@ -110,6 +110,7 @@ import waves from '../../assets/illustrations/combined-waves.svg'
 
   @media (--mobile) {
     font-size: 1rem;
+    margin-bottom: 10.625rem;
   }
 }
 
