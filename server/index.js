@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import express from 'express'
 import rateLimit from 'express-rate-limit'
 import nodemailer from 'nodemailer'
+import { renderContactEmail } from './emailTemplate.js'
 
 const REQUIRED_ENV = ['SMTP_HOST', 'MAIL_FROM', 'MAIL_TO']
 const missing = REQUIRED_ENV.filter((key) => !process.env[key])
@@ -75,6 +76,7 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
       replyTo: { name, address: email },
       subject: `New message from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
+      html: renderContactEmail({ name, email, message }),
     })
     res.json({ ok: true })
   } catch (mailError) {
@@ -84,6 +86,18 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
     })
   }
 })
+
+if (process.env.NODE_ENV !== 'production') {
+  app.get('/api/contact/preview', (_req, res) => {
+    res.send(
+      renderContactEmail({
+        name: 'Jessie James',
+        email: 'jessiej@acme.com',
+        message: 'Hello!\n\nLoved your portfolio, let’s talk about a project.',
+      }),
+    )
+  })
+}
 
 app.use(express.static(distDir))
 
