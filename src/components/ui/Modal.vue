@@ -53,6 +53,14 @@ function onBackdropClick(event) {
   border-radius: 1.25rem;
   background: var(--color-white);
   color: var(--color-dark);
+
+  @media (--mobile) {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
 }
 
 .Modal::backdrop {

@@ -5,7 +5,7 @@ import iconFigma from '../../assets/icons/icon-figma.svg'
 import iconGithub from '../../assets/icons/icon-github.svg'
 import iconLinkedin from '../../assets/icons/icon-linkedin.svg'
 
-const githubUrl = 'https://github.com/arekushia'
+const githubUrl = 'https://github.com/arekushia/alexiaswebsite'
 const linkedinUrl = 'https://www.linkedin.com/in/alexia-legros/'
 const portfolioUrl =
   'https://www.figma.com/design/wdZsjbUFk9uc6UAg6zDHUa/Alexia-s-Portfolio?node-id=6-2'
