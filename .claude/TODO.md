@@ -1,6 +1,7 @@
 - [x] GitHub link: point to the actual repo instead of the profile
-- [ ] Nicer HTML template for the received contact e-mail
+- [x] Nicer HTML template for the received contact e-mail
 - [ ] Re-test contact form security (rate limit, honeypot, validation)
 - [x] Remove margins on the contact popup, mobile only
-- [ ] Add a lib for easier changelog/release notes
-- [ ] Rewrite README, currently empty/off
+- [x] Add a lib for easier changelog/release notes
+- [x] Rewrite README, currently empty/off
+- [x] Clean Git History
