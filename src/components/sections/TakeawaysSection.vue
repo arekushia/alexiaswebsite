@@ -14,16 +14,16 @@ const websiteFigmaMockups =
 </script>
 
 <template>
-  <section class="TakeawaysSection">
+  <section id="links" class="TakeawaysSection">
     <Container class="TakeawaysSection-inner">
-      <h2 class="TakeawaysSection-title">Takeaways</h2>
+      <h2 class="TakeawaysSection-title">Takeaways / Links</h2>
 
       <ul class="TakeawaysSection-list">
         <li class="TakeawaysSection-item">
           <p class="TakeawaysSection-text">
             You can download my (not so) <span class="font-weight-bold">traditional CV</span>
           </p>
-          <TertiaryButton href="/files/cv.pdf" label="here" />
+          <TertiaryButton href="/files/cv_alegros.pdf" label="here" />
         </li>
 
         <li class="TakeawaysSection-item">

@@ -8,7 +8,7 @@ import characterIllustration from '../../assets/illustrations/blonde-lady.svg'
 import wave1 from '../../assets/illustrations/wave-1.svg'
 import wave2 from '../../assets/illustrations/wave-2.svg'
 
-const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !']
+const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !', 'Greetings!']
 </script>
 
 <template>
@@ -34,6 +34,7 @@ const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !']
           <span class="font-weight-bold">Discover more</span> about me and see if we could work
           together on <span class="font-weight-bold">your next project!</span>
         </p>
+        <a href="#links" class="HeroSection-skipLink text-decoration-funky">Skip to links</a>
       </div>
     </div>
 
@@ -216,12 +217,18 @@ const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !']
   }
 }
 
+.HeroSection-skipLink {
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+  font-size: 1.125rem;
+}
+
 .HeroSection-scrollDown {
+  display: none;
   position: absolute;
   left: 60%;
   bottom: 3rem;
   z-index: 2;
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
@@ -233,6 +240,7 @@ const greetings = ['Hi!', 'Hallo!', 'Hej hej!', 'Hola!', 'Ciao!', 'Salut !']
   text-decoration: none;
 
   @media (--mobile) {
+    display: flex;
     left: auto;
     right: auto;
     bottom: 6rem;
